@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DefaultSoundLibrary
+  m_EditorClassIdentifier: Assembly-CSharp:ErikW.Dialogue:SoundLibrary
+  sounds:
+  - name: Echo01
+    clip: {fileID: 8300000, guid: 78f76e96d533844488e5e6e2606b6b16, type: 3}
+    soundType: 0
+  - name: Info01
+    clip: {fileID: 8300000, guid: 60e882b68ec1b437abc7515e59333b23, type: 3}
+    soundType: 0
+  - name: Goal
+    clip: {fileID: 8300000, guid: 043fb4416cb2d4a4a959114fb8032716, type: 3}
+    soundType: 0
+  - name: Question01
+    clip: {fileID: 8300000, guid: 0bf7bec6e7bcb4262b21a0d27bef6b8c, type: 3}
+    soundType: 0

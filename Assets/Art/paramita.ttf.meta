@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 933889105b1474e5ab57e0e17c0e30be
+timeCreated: 1500704580
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Paramount
+  fontNames:
+  - Paramount
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

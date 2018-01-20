@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 30b2db6dc51d14b1085f80296b160455
+timeCreated: 1492825999
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 256
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: happyfont
+  fontNames:
+  - happyfont
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 2
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

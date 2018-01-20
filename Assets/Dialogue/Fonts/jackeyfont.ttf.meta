@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a1cec3b4aa4214be9b7348e1fd93b26d
+timeCreated: 1492825988
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 256
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: JackeyFont
+  fontNames:
+  - JackeyFont
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 2
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

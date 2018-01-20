@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3f43abc0a1b6f43358280ff40fd20ae2
+timeCreated: 1507521531
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: release me
+  fontNames:
+  - release me
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

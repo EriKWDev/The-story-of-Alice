@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 9662794aa8ffb4a15b84f1a69cce9c25
+timeCreated: 1492825993
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 256
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: koharu font
+  fontNames:
+  - koharu font
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 2
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

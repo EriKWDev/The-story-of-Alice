@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: BoySoundLibrary
+  m_EditorClassIdentifier: Assembly-CSharp:ErikW.Dialogue:SoundLibrary
+  sounds:
+  - name: Greeting01
+    clip: {fileID: 8300000, guid: 7f385b75f5a7142c9a83304aaa1ce676, type: 3}
+    soundType: 5
+  - name: Greeting02
+    clip: {fileID: 8300000, guid: e524d1917fce041ccab51074364f5f49, type: 3}
+    soundType: 5
+  - name: Confused01
+    clip: {fileID: 8300000, guid: 49d68903c5bdb4a5ab8de28dd610bbbb, type: 3}
+    soundType: 14
+  - name: Confused02
+    clip: {fileID: 8300000, guid: c775e7ac015fd429a87e5f9dfcfc013f, type: 3}
+    soundType: 14
+  - name: Surprised06
+    clip: {fileID: 8300000, guid: b24daaa40d6944ee0bd47b75fe505d24, type: 3}
+    soundType: 18
+  - name: Uncertain01
+    clip: {fileID: 8300000, guid: 76677dd04e2b04d7d8dce2f7eece677f, type: 3}
+    soundType: 17
+  - name: Surprised01
+    clip: {fileID: 8300000, guid: 32963e92d92fb4d95b0e154d600f8b8e, type: 3}
+    soundType: 18
+  - name: Surprised02
+    clip: {fileID: 8300000, guid: 779a394dce47b4b248090e149bd63c97, type: 3}
+    soundType: 18
+  - name: Surprised03
+    clip: {fileID: 8300000, guid: 84df3fb3c47a546ceb1c8bd153a7f9c9, type: 3}
+    soundType: 0
+  - name: Surprised04
+    clip: {fileID: 8300000, guid: bed601c202dd547159b5c03ce3d62b38, type: 3}
+    soundType: 18
+  - name: Surprised05
+    clip: {fileID: 8300000, guid: 26b64fc9f6ba74b95b3355c0f19a2b8f, type: 3}
+    soundType: 18
+  - name: Confused03
+    clip: {fileID: 8300000, guid: 6e4be816672294fa4bdf648d7bcfd1a5, type: 3}
+    soundType: 14
+  - name: Question01
+    clip: {fileID: 8300000, guid: ce3fba2a7446c4d7c903279a04fa1635, type: 3}
+    soundType: 11
+  - name: Laugh01
+    clip: {fileID: 8300000, guid: a01155f847c0d4bf3b142b37e2414d7c, type: 3}
+    soundType: 15

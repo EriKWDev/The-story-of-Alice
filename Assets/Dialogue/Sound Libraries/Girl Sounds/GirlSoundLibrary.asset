@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: GirlSoundLibrary
+  m_EditorClassIdentifier: Assembly-CSharp:ErikW.Dialogue:SoundLibrary
+  sounds:
+  - name: Pain01
+    clip: {fileID: 8300000, guid: cd7943413b03e4d9da61b8e1119c8310, type: 3}
+    soundType: 13
+  - name: Laugh01
+    clip: {fileID: 8300000, guid: 5b8f13711552a47369e9ddf1ff23e5ae, type: 3}
+    soundType: 15
+  - name: Hmm1
+    clip: {fileID: 8300000, guid: a4533b1e6e4474716bfd3fa4009eefa6, type: 3}
+    soundType: 17
+  - name: Hmm2
+    clip: {fileID: 8300000, guid: 3df80e778136a49b487fbfb53fd649ca, type: 3}
+    soundType: 12
+  - name: Frightened01
+    clip: {fileID: 8300000, guid: c8ab196ecd5bd46428b7145cbe8eae5f, type: 3}
+    soundType: 4

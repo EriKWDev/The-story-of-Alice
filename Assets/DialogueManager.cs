@@ -510,7 +510,7 @@ public class DialogueManager : MonoBehaviour {
 	
 		//StartCoroutine (AddText (textBox, text));
 
-		float timeToRead = text.Length / 30f;
+		float timeToRead = text.Length / 35f;
 		float t = 0f;
 		int i = 0;
 

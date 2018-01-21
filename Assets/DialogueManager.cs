@@ -96,7 +96,6 @@ public class DialogueManager : MonoBehaviour {
 		}
 
 		for (int i = 0; i < all.Count; i++) {
-			print (all [i]);
 			if (all[i][0].ToUpper () == "ID") {
 				List<DialogueLine> dls = new List<DialogueLine> ();
 				Dialogue d = new Dialogue (dls, all[i][1].ToUpper ());

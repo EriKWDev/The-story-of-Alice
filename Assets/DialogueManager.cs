@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour {
 
 	[Header ("Debug")]
 	public bool debug;
-	public string debugDialogue = "DN000-000-2";
+	public string debugDialogue;
 	public int debugLine = 1;
 
 	[Header ("CSV & UI Settings")]
@@ -81,6 +81,7 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	void Start () {
+		print (dialogueCSV.text);
 		CreateDialogueDictionary ();
 		if (debug) {
 			ReadDialogue (debugDialogue, debugLine);
@@ -96,6 +97,7 @@ public class DialogueManager : MonoBehaviour {
 		}
 
 		for (int i = 0; i < all.Count; i++) {
+
 			if (all[i][0].ToUpper () == "ID") {
 				List<DialogueLine> dls = new List<DialogueLine> ();
 				Dialogue d = new Dialogue (dls, all[i][1].ToUpper ());

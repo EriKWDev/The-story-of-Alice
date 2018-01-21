@@ -88,9 +88,7 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	public void CreateDialogueDictionary () {
-
 		List<string> lines = dialogueCSV.text.Split ("\n"[0]).ToList<string> ();
-
 		Dictionary<int, List<string>> all = new Dictionary<int, List<string>> ();
 
 		for (int i = 0; i < lines.Count; i++) {
@@ -98,7 +96,7 @@ public class DialogueManager : MonoBehaviour {
 		}
 
 		for (int i = 0; i < all.Count; i++) {
-
+			print (all [i]);
 			if (all[i][0].ToUpper () == "ID") {
 				List<DialogueLine> dls = new List<DialogueLine> ();
 				Dialogue d = new Dialogue (dls, all[i][1].ToUpper ());
@@ -110,38 +108,36 @@ public class DialogueManager : MonoBehaviour {
 						CSVName = all[i][0];
 					}
 
-					{
-						if (CSVName.ToUpper () != "TRIGGER") {
-							if (dialogueSpeakers.ContainsKey (CSVName)) {
-								DialogueLine dl1 = new DialogueLine (dialogueSpeakers [CSVName], all [i] [1], (all [i] [2] != "" ? int.Parse (all [i] [2]) : defaultLineType), (all [i] [3] != "" ? float.Parse (all [i] [3]) : defaultLineSpeed));
-								d.lines.Add (dl1);
-							} else {
-								DialogueSpeaker newSpeaker2 = new DialogueSpeaker (CSVName, defaultColor, defaultSpeakerVoice, defaultFont);
-								DialogueLine dl2 = new DialogueLine (newSpeaker2, all [i] [1], (all [i] [2] != "" ? int.Parse (all [i] [2]) : defaultLineType), (all [i] [3] != "" ? float.Parse (all [i] [3]) : defaultLineSpeed));
-								d.lines.Add (dl2);
-							}
+					if (CSVName.ToUpper () != "TRIGGER") {
+						if (dialogueSpeakers.ContainsKey (CSVName)) {
+							DialogueLine dl1 = new DialogueLine (dialogueSpeakers [CSVName], all [i] [1], (all [i] [2] != "" ? int.Parse (all [i] [2]) : defaultLineType), (all [i] [3] != "" ? float.Parse (all [i] [3]) : defaultLineSpeed));
+							d.lines.Add (dl1);
 						} else {
-							List<string> options = new List<string> ();
+							DialogueSpeaker newSpeaker2 = new DialogueSpeaker (CSVName, defaultColor, defaultSpeakerVoice, defaultFont);
+							DialogueLine dl2 = new DialogueLine (newSpeaker2, all [i] [1], (all [i] [2] != "" ? int.Parse (all [i] [2]) : defaultLineType), (all [i] [3] != "" ? float.Parse (all [i] [3]) : defaultLineSpeed));
+							d.lines.Add (dl2);
+						}
+					} else {
+						List<string> options = new List<string> ();
+						for (int j = 4; j <= 6; j++) {
+							if (all [i] [j] != "")
+								options.Add (all [i] [j]);
+						}
+
+						DialogueSpeaker newSpeaker3 = new DialogueSpeaker (CSVName, defaultColor, defaultSpeakerVoice, defaultFont);
+						if (all [i] [1].ToUpper () != "CHOICE" && all [i] [1].ToUpper () != "SAVECHOICE") {
+							DialogueLine dl3 = new DialogueLine (newSpeaker3, all [i] [1], true, options);
+							d.lines.Add (dl3);
+						} else {
+
+							List<string> choices = new List<string> ();
 							for (int j = 4; j <= 6; j++) {
-								if (all [i] [j] != "")
-									options.Add (all [i] [j]);
-							}
-
-							DialogueSpeaker newSpeaker3 = new DialogueSpeaker (CSVName, defaultColor, defaultSpeakerVoice, defaultFont);
-							if (all [i] [1].ToUpper () != "CHOICE" && all [i] [1].ToUpper () != "SAVECHOICE") {
-								DialogueLine dl3 = new DialogueLine (newSpeaker3, all [i] [1], true, options);
-								d.lines.Add (dl3);
-							} else {
-
-								List<string> choices = new List<string> ();
-								for (int j = 4; j <= 6; j++) {
-									if (all [i + 1] [j] != "") {
-										choices.Add (all [i+1] [j]);
-									}
+								if (all [i + 1] [j] != "") {
+									choices.Add (all [i+1] [j]);
 								}
-								DialogueLine dl4 = new DialogueLine (newSpeaker3, all [i] [1], true, options, choices);
-								d.lines.Add (dl4);
 							}
+							DialogueLine dl4 = new DialogueLine (newSpeaker3, all [i] [1], true, options, choices);
+							d.lines.Add (dl4);
 						}
 					}
 					i++;

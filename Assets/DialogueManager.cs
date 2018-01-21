@@ -89,7 +89,7 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	public void CreateDialogueDictionary () {
-		List<string> lines = dialogueCSV.text.Split ("\n"[0]).ToList<string> ();
+		List<string> lines = dialogueCSV.text.Split ('\n').ToList<string> ();
 		Dictionary<int, List<string>> all = new Dictionary<int, List<string>> ();
 
 		for (int i = 0; i < lines.Count; i++) {

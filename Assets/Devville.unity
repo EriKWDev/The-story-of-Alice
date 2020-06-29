@@ -1772,7 +1772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debug: 1
-  debugDialogue: DN000
+  debugDialogue: 'RPS001 '
   debugLine: 1
   textBox: {fileID: 1805323708}
   nameTextBox: {fileID: 676216002}
